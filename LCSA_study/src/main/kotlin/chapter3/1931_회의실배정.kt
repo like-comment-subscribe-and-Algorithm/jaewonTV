@@ -25,7 +25,7 @@ fun main() {
     // 갯수 Count
     var count= 0
 
-    // 정렬된 시간
+    // 정렬된 시간 종료시간이 빠른 시간 기준으로 greedy 적용
     for (mTime in timeTable) {
         if (end <= mTime[0]) {
             end = mTime[1]
