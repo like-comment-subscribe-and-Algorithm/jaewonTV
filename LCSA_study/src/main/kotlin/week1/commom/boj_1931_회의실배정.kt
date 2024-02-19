@@ -1,4 +1,4 @@
-package chapter3
+package week1.commom
 
 var timeTable : MutableList<List<Int>> = mutableListOf()
 
