@@ -1,4 +1,4 @@
-package chapter2
+package week1.commom
 
 val firstLine = readln().split(" ").map { it.toInt() }
 val numberSize = firstLine[0]
@@ -21,12 +21,12 @@ fun subsetSum(index : Int, currentSum : Int)  {
     if (currentSum + numbers[index] == input_sum) {
         count++
     }
-
     // 현재 index를 더하는 재귀함수
     subsetSum(index+1,newSum)
 
     // 현재 index를 더하지 않는 재귀함수
     subsetSum(index+1,currentSum)
+
 }
 
 fun main(args: Array<String>) {
